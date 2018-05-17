@@ -1,0 +1,99 @@
+html, body{
+    background: darkslategray;
+    color: #fff;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: normal;   
+}
+
+h1, h2, h3{
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    color: lightcoral;
+    text-decoration: none;
+}
+    a:hover{
+        color: aquamarine;
+        border-bottom: 1px dashed slategray;
+    }
+    .a--comment-line{
+        color: lightgray;
+    }
+
+dl{
+    margin: 0 0 20px;
+}
+
+dl:after{
+    content: "}";
+    color: cadetblue;
+}
+    dt{
+        color: mediumpurple;
+        float: left;
+        padding-left: 40px;
+        padding-right: 10px;
+    }
+    dd{
+        color: lightcoral;
+        padding-left: 20px;
+    }
+
+.wrapper {
+    padding: 20px 50px;
+}
+
+.comment-block,
+.comment-single{
+    color: lightgray;
+    margin-bottom: 20px;
+}
+    .comment-block:before{
+        content: "/*****"
+    }
+    .comment-block:after{
+        content: "*/";
+        margin-left: 9px;
+    }
+
+    .comment-single:before{
+        content: "/* "
+    }
+    .comment-single:after{
+        content: " */";
+    }
+
+.comment-line{
+    display: block;
+    margin-left: 9px;
+}
+
+
+.selector{
+    color: cadetblue;
+}
+    .selector:after{
+        content: " {";
+    }
+
+.indent-block{
+    margin-left: 40px;
+}
+
+.comma,
+.colon,
+.semi-colon{
+    color: slategray;
+}
+
+.is-value{
+    color: coral;
+}
